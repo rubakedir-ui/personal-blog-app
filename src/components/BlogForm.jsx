@@ -9,7 +9,6 @@ function BlogForm({ onSubmit }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    // Basic validation
     if (title.trim() === "") {
       alert("Title cannot be empty");
       return;
@@ -22,8 +21,6 @@ function BlogForm({ onSubmit }) {
       id: Date.now(),
     });
 
-
-    // Clear form after submit
     setTitle("");
     setContent("");
   }

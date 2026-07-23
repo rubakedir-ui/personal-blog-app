@@ -77,9 +77,6 @@ cursor:pointer;
 }
 
 
-
-/* ERROR */
-
 .error{
 
 background:#ffd6d6;
@@ -90,11 +87,6 @@ margin:20px 0;
 
 }
 
-
-
-
-/* GRID */
-
 .blog-grid{
 
 display:grid;
@@ -102,10 +94,6 @@ grid-template-columns:repeat(3,1fr);
 gap:18px;
 
 }
-
-
-
-/* CARD */
 
 .card{
 

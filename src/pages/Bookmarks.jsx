@@ -109,20 +109,6 @@ function Bookmarks(){
 
 </section>
 
-
-        {/*<div className="trend-grid">
-
-
-          <BlogCard/>
-
-          <BlogCard/>
-
-          <BlogCard/>
-
-
-    </div>*/}
-
-
      
 
 

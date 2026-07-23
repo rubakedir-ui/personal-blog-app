@@ -23,22 +23,18 @@ function Home() {
   return (
     <div className="home">
 
-      {/* Hero Section */}
       <section className="hero">
 
         <h1>
-          Welcome to MinimalistBlog
+          Welcome to personal thought blog
         </h1>
 
         <p>
-          A space for thoughtful narratives, minimalist design,
-          and the art of sharing stories that matter.
+          A space for thoughtful narratives, personal design,
+          and the art of sharing personal thought.
         </p>
 
       </section>
-
-
-      {/* Latest Stories */}
 
       <section className="stories">
 
@@ -48,10 +44,6 @@ function Home() {
             <h2>
               Latest Stories
             </h2>
-
-            <p>
-              Discover the latest thoughts and narratives from our community.
-            </p>
           </div>
 
 
@@ -60,9 +52,6 @@ function Home() {
           </button>
 
         </div>
-
-
-
         {
           error && (
             <div className="error">
