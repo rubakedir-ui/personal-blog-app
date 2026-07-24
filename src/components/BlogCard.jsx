@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
@@ -42,9 +42,6 @@ Read More →
 </Link>
 
 
-<span>
-5 min read
-</span>
 
 </div>
 

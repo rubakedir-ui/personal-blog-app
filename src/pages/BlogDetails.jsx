@@ -8,7 +8,13 @@ function BlogDetails(){
 
     const [post,setPost] = useState(null);
     const [comments,setComments] = useState([]);
-
+    const images = [
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+      ];
 
     useEffect(()=>{
 
@@ -38,16 +44,11 @@ return(
 
 
 <div className="details-page">
-<div className="min-h-screen bg-blue-50">
-   <Navbar />
-   <Home />
-</div>
+
 
     <Link className="back" to="/">
         ← Back to Home
     </Link>
-
-
 
     <article className="article-card">
 
@@ -84,12 +85,12 @@ return(
             {post.title}
         </h1>
 
-
-
-        <img 
-          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-          className="article-image"
-        />
+       
+        <img
+         src={images[post.id % images.length]}
+         alt={post.title}
+        className="article-image"
+       />
 
 
 
@@ -103,15 +104,6 @@ return(
             meaningful design focuses on simplicity,
             clarity and human experience.
         </p>
-
-
-
-        <blockquote>
-
-            "Minimalism is not the lack of something.
-            It is simply the perfect amount of something."
-
-        </blockquote>
 
 
 

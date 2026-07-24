@@ -1,8 +1,9 @@
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import BlogCard from "../components/BlogCard";
 
 function Home() {
-
+  const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState("");
 
@@ -47,9 +48,12 @@ function Home() {
           </div>
 
 
-          <button>
-            + Create New Post
-          </button>
+          <button
+            onClick={() => navigate("/create")}
+            className="bg-indigo-600 text-white px-6 py-3 rounded-lg"
+          >
+             + Create New Post
+         </button>
 
         </div>
         {
