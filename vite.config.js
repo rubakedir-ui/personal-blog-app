@@ -8,11 +8,3 @@ export default defineConfig({
     tailwindcss(),
   ],
 });
-{
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
-}
